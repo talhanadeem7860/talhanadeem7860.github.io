@@ -51,7 +51,7 @@ const repositories = [
     name: "Chat-with-Your-Docs-A-Personal-Knowledge-Base-Q-A-System",
     desc: "RAG-powered chatbot for querying documents.",
     link: "https://github.com/talhanadeem7860/Chat-with-Your-Docs-A-Personal-Knowledge-Base-Q-A-System",
-    img: "images/docschat.png"
+    img: "images/chatdocs.png"
   },
   {
     name: "Gender-Speaker-Recognition-with-Different-Machine-Learning-Models",
@@ -123,13 +123,13 @@ const repositories = [
     name: "AQI-Forecasting-for-Lahore-using-LSTM",
     desc: "LSTM-based PM2.5 forecasting for Lahore.",
     link: "https://github.com/talhanadeem7860/AQI-Forecasting-for-Lahore-using-LSTM",
-    img: "images/lstm.png"
+    img: "images/aqi.jpg"
   },
   {
     name: "Real-Time-3D-Brain-Visualization-Depicting-Source-localized-Activity",
     desc: "EEG-based 3D brain visualization system.",
     link: "https://github.com/talhanadeem7860/Real-Time-3D-Brain-Visualization-Depicting-Source-localized-Activity",
-    img: "images/eeg.png"
+    img: "images/brain.jpg"
   },
   {
     name: "Hybrid-Reinforcement-Guided-Deep-Unfolded-Estimation-for-Preterm-Birth-Prediction",

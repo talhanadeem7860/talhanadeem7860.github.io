@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Talha Nadeem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Talha Nadeem</h1>
+    <p>Researcher | Machine Learning | Signal Processing | AI Engineer</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="fade-in">
+    <h2>Repositories & Projects</h2>
+    <div class="projects">
+      
+      <div class="project-card fade-in">
+        <img src="images/clip.jpg" alt="CLIP Search">
+        <h3>Semantic Image Search (CLIP)</h3>
+        <p>Zero-shot semantic search using CLIP for retrieving images via text queries.</p>
+      </div>
+
+      <div class="project-card fade-in">
+        <img src="images/molecular.png" alt="Molecular AI">
+        <h3>Molecular Property Prediction</h3>
+        <p>Graph Neural Networks for drug discovery using molecular structures.</p>
+      </div>
+
+      <div class="project-card fade-in">
+        <img src="images/wakeword.jpg" alt="Wake Word">
+        <h3>Wake Word Detector</h3>
+        <p>Real-time audio classification using CNNs on MFCC features, deployed with PyAudio.</p>
+      </div>
+
+      <div class="project-card fade-in">
+        <img src="images/stateestimation.jpg" alt="EKF">
+        <h3>State Estimation (NIR-EKF)</h3>
+        <p>Implemented normalized innovation ratio EKF for robust state estimation.</p>
+      </div>
+
+      <div class="project-card fade-in">
+        <img src="images/preterm.jpg" alt="Preterm Birth Prediction">
+        <h3>Preterm Birth Prediction</h3>
+        <p>Hybrid deep unfolded EKF & RL for preterm birth prediction using physiological data.</p>
+      </div>
+
+      <div class="project-card fade-in">
+        <img src="images/retailsales.jpeg" alt="Retail Sales">
+        <h3>Retail Sales Forecasting</h3>
+        <p>GNNs for spatiotemporal forecasting in retail demand prediction.</p>
+      </div>
+
+      <div class="project-card fade-in">
+        <img src="images/sentiment.jpg" alt="Sentiment Analysis">
+        <h3>Sentiment Analysis</h3>
+        <p>Twitter/Facebook sentiment classification with deep learning models.</p>
+      </div>
+
+      <div class="project-card fade-in">
+        <img src="images/voicecloning.jpg" alt="Voice Cloning">
+        <h3>Voice Cloning</h3>
+        <p>Neural speech synthesis and speaker adaptation for personalized voices.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="fade-in skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Machine Learning (PyTorch, TensorFlow, Keras)</li>
+      <li>Deep Learning (CNNs, RNNs, Transformers, GNNs)</li>
+      <li>Signal Processing & Wireless Communication</li>
+      <li>Optimization & Reinforcement Learning</li>
+      <li>Python, MATLAB, C++</li>
+    </ul>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="fade-in certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AI for Medical Prognosis — DeepLearning.AI (2025)</li>
+      <li>AI for Medical Diagnosis — DeepLearning.AI (2025)</li>
+      <li>Generative AI for Everyone — DeepLearning.AI (2025)</li>
+      <li>Medical Image Processing — MathWorks (2025)</li>
+      <li>Introduction to Neural Networks & PyTorch — IBM (2023)</li>
+      <li>Image Denoising with Autoencoders & Keras — Guided Projects (2023)</li>
+      <li>Machine Learning — Stanford University (2020)</li>
+      <li>Python for Everybody — University of Michigan (2020)</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="fade-in experience">
+    <h2>Experience</h2>
+    <p>Worked on AI/ML, computer vision, and signal processing projects with strong focus on academic research and applied engineering solutions. Contributions include published papers, algorithm development, and advanced applications in imaging and communication systems.</p>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

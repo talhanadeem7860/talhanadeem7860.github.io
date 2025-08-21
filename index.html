@@ -1,147 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Talha Nadeem — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talha Nadeem - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Talha Nadeem</h1>
-    <p>Researcher | Machine Learning | Signal Processing | AI Engineer</p>
-    <nav>
-      <a href="mailto:your.email@example.com">📧 Email</a>
-      <a href="https://github.com/talhanadeem7860" target="_blank">💻 GitHub</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a>
-      <a href="resume.pdf" target="_blank">📄 Resume</a>
-    </nav>
+    <p>ML/DL Researcher | Signal Processing | AI Engineer</p>
+    <div class="contact-links">
+      <a href="mailto:talhanadeem7860@gmail.com">Email</a>
+      <a href="https://github.com/talhanadeem7860" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/talha-nadeem-709022186/" target="_blank">LinkedIn</a>
+      <a href="Talha-Nadeem--CV.pdf" target="_blank">Resume</a>
+    </div>
   </header>
 
-  <!-- Projects -->
-  <section>
-    <h2>Repositories & Projects</h2>
-    <div class="projects-carousel">
-      <button class="arrow left">&#10094;</button>
-      <div class="projects-wrapper" id="projects">
-        <a href="https://github.com/talhanadeem7860/Semantic-Image-Search" target="_blank" class="project">
-          <img src="images/clip.jpg" alt="CLIP" />
-          <h3>Semantic Image Search (CLIP)</h3>
-          <p>Zero-shot semantic search using CLIP.</p>
-        </a>
-        <a href="https://github.com/talhanadeem7860/Molecular-Property-Prediction" target="_blank" class="project">
-          <img src="images/molecular.png" alt="Molecular" />
-          <h3>Molecular Property Prediction</h3>
-          <p>GNNs for drug discovery via molecules.</p>
-        </a>
-        <a href="https://github.com/talhanadeem7860/Wake-Word-Detector" target="_blank" class="project">
-          <img src="images/wakeword.jpg" alt="Wakeword" />
-          <h3>Wake Word Detector</h3>
-          <p>Real-time CNNs on MFCC features.</p>
-        </a>
-        <a href="https://github.com/talhanadeem7860/State-Estimation" target="_blank" class="project">
-          <img src="images/stateestimation.jpg" alt="State Estimation" />
-          <h3>State Estimation (NIR-EKF)</h3>
-          <p>Robust EKF with innovation ratio.</p>
-        </a>
-        <a href="https://github.com/talhanadeem7860/Preterm-Birth-Prediction" target="_blank" class="project">
-          <img src="images/preterm.jpg" alt="Preterm" />
-          <h3>Preterm Birth Prediction</h3>
-          <p>Hybrid EKF + RL for medical AI.</p>
-        </a>
-        <a href="https://github.com/talhanadeem7860/Retail-Sales-Forecasting" target="_blank" class="project">
-          <img src="images/retailsales.jpeg" alt="Retail Sales" />
-          <h3>Retail Sales Forecasting</h3>
-          <p>GNNs for retail demand forecasting.</p>
-        </a>
-        <a href="https://github.com/talhanadeem7860/Sentiment-Analysis" target="_blank" class="project">
-          <img src="images/sentiment.jpg" alt="Sentiment" />
-          <h3>Sentiment Analysis</h3>
-          <p>Twitter/Facebook classification.</p>
-        </a>
-        <a href="https://github.com/talhanadeem7860/Voice-Cloning" target="_blank" class="project">
-          <img src="images/voicecloning.jpg" alt="Voice Cloning" />
-          <h3>Voice Cloning</h3>
-          <p>Neural speech synthesis and adaptation.</p>
-        </a>
-      </div>
-      <button class="arrow right">&#10095;</button>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
-    <div class="skills-list">
-      <span>Python</span>
-      <span>PyTorch</span>
-      <span>TensorFlow</span>
-      <span>Keras</span>
-      <span>Scikit-learn</span>
-      <span>OpenCV</span>
-      <span>NumPy</span>
-      <span>Pandas</span>
-      <span>Signal Processing</span>
-      <span>Deep Unfolding</span>
-      <span>Variational Inference</span>
-      <span>Bayesian Regression</span>
-      <span>Graph Neural Networks (GNNs)</span>
-      <span>Reinforcement Learning</span>
-      <span>Time Series Forecasting</span>
-      <span>Cloud (AWS, GCP)</span>
-      <span>Git / GitHub</span>
+    <ul>
+      <li>Machine Learning, Deep Learning, AI Algorithms</li>
+      <li>Signal Processing, Time Series Forecasting</li>
+      <li>PyTorch, TensorFlow, Keras, OpenCV</li>
+      <li>Python, MATLAB, R, SQL</li>
+      <li>Cloud: AWS, GCP, Vertex AI</li>
+      <li>Docker, Git/GitHub, CI/CD, MLOps</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Repositories & Projects</h2>
+    <div class="carousel-container">
+      <button class="prev">&#10094;</button>
+      <div class="carousel" id="repo-carousel"></div>
+      <button class="next">&#10095;</button>
     </div>
   </section>
 
-  <!-- Experience -->
-  <section>
+  <section id="experience">
     <h2>Professional Experience</h2>
-    <div class="experience">
-      <h3>AI Researcher — UET Lahore</h3>
-      <p><em>2022 – Present</em></p>
-      <ul>
-        <li>Developed deep unfolding pipelines for MRI reconstruction.</li>
-        <li>Implemented GNNs for spatiotemporal retail forecasting.</li>
-        <li>Applied RL in wireless networks optimization.</li>
-      </ul>
-
-      <h3>Machine Learning Engineer — Freelance</h3>
-      <p><em>2020 – 2022</em></p>
-      <ul>
-        <li>Delivered sentiment analysis, image restoration & fraud detection systems.</li>
-        <li>Deployed ML pipelines for signal & speech processing.</li>
-      </ul>
+    <div class="exp-item">
+      <h3>Research Associate @ LUMS</h3>
+      <p>Worked on ML/DL projects including deep unfolding, time-series forecasting, and wireless communication system modeling.</p>
+    </div>
+    <div class="exp-item">
+      <h3>Graduate Researcher @ UET Lahore</h3>
+      <p>Developed algorithms for state estimation, preterm birth prediction, and RIS-enabled networks.</p>
     </div>
   </section>
 
-  <!-- Education -->
-  <section>
+  <section id="education">
     <h2>Education</h2>
-    <div class="education">
-      <h3>Ph.D. — Machine Learning & Signal Processing</h3>
-      <p>University of Engineering and Technology (UET), Lahore (Ongoing)</p>
-
-      <h3>M.Sc. — Electrical Engineering</h3>
-      <p>University of Engineering and Technology (UET), Lahore</p>
-    </div>
+    <p><strong>MS Electrical Engineering</strong> — UET Lahore (2025)</p>
+    <p><strong>BSc Electrical Engineering</strong> — UET Lahore (2021)</p>
   </section>
 
-  <footer>
-    <p>© 2025 Talha Nadeem | Portfolio</p>
-  </footer>
-
-  <script>
-    const leftArrow = document.querySelector('.arrow.left');
-    const rightArrow = document.querySelector('.arrow.right');
-    const projects = document.getElementById('projects');
-
-    leftArrow.addEventListener('click', () => {
-      projects.scrollBy({ left: -300, behavior: 'smooth' });
-    });
-
-    rightArrow.addEventListener('click', () => {
-      projects.scrollBy({ left: 300, behavior: 'smooth' });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

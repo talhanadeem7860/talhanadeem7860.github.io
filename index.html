@@ -1,119 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Talha Nadeem</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Talha Nadeem — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Talha Nadeem</h1>
     <p>Researcher | Machine Learning | Signal Processing | AI Engineer</p>
+    <nav>
+      <a href="mailto:your.email@example.com">📧 Email</a>
+      <a href="https://github.com/talhanadeem7860" target="_blank">💻 GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a>
+      <a href="resume.pdf" target="_blank">📄 Resume</a>
+    </nav>
   </header>
 
-  <!-- Projects Section -->
-  <section class="fade-in">
+  <!-- Projects -->
+  <section>
     <h2>Repositories & Projects</h2>
-    <div class="projects">
-      
-      <div class="project-card fade-in">
-        <img src="images/clip.jpg" alt="CLIP Search">
-        <h3>Semantic Image Search (CLIP)</h3>
-        <p>Zero-shot semantic search using CLIP for retrieving images via text queries.</p>
+    <div class="projects-carousel">
+      <button class="arrow left">&#10094;</button>
+      <div class="projects-wrapper" id="projects">
+        <a href="https://github.com/talhanadeem7860/Semantic-Image-Search" target="_blank" class="project">
+          <img src="images/clip.jpg" alt="CLIP" />
+          <h3>Semantic Image Search (CLIP)</h3>
+          <p>Zero-shot semantic search using CLIP.</p>
+        </a>
+        <a href="https://github.com/talhanadeem7860/Molecular-Property-Prediction" target="_blank" class="project">
+          <img src="images/molecular.png" alt="Molecular" />
+          <h3>Molecular Property Prediction</h3>
+          <p>GNNs for drug discovery via molecules.</p>
+        </a>
+        <a href="https://github.com/talhanadeem7860/Wake-Word-Detector" target="_blank" class="project">
+          <img src="images/wakeword.jpg" alt="Wakeword" />
+          <h3>Wake Word Detector</h3>
+          <p>Real-time CNNs on MFCC features.</p>
+        </a>
+        <a href="https://github.com/talhanadeem7860/State-Estimation" target="_blank" class="project">
+          <img src="images/stateestimation.jpg" alt="State Estimation" />
+          <h3>State Estimation (NIR-EKF)</h3>
+          <p>Robust EKF with innovation ratio.</p>
+        </a>
+        <a href="https://github.com/talhanadeem7860/Preterm-Birth-Prediction" target="_blank" class="project">
+          <img src="images/preterm.jpg" alt="Preterm" />
+          <h3>Preterm Birth Prediction</h3>
+          <p>Hybrid EKF + RL for medical AI.</p>
+        </a>
+        <a href="https://github.com/talhanadeem7860/Retail-Sales-Forecasting" target="_blank" class="project">
+          <img src="images/retailsales.jpeg" alt="Retail Sales" />
+          <h3>Retail Sales Forecasting</h3>
+          <p>GNNs for retail demand forecasting.</p>
+        </a>
+        <a href="https://github.com/talhanadeem7860/Sentiment-Analysis" target="_blank" class="project">
+          <img src="images/sentiment.jpg" alt="Sentiment" />
+          <h3>Sentiment Analysis</h3>
+          <p>Twitter/Facebook classification.</p>
+        </a>
+        <a href="https://github.com/talhanadeem7860/Voice-Cloning" target="_blank" class="project">
+          <img src="images/voicecloning.jpg" alt="Voice Cloning" />
+          <h3>Voice Cloning</h3>
+          <p>Neural speech synthesis and adaptation.</p>
+        </a>
       </div>
-
-      <div class="project-card fade-in">
-        <img src="images/molecular.png" alt="Molecular AI">
-        <h3>Molecular Property Prediction</h3>
-        <p>Graph Neural Networks for drug discovery using molecular structures.</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <img src="images/wakeword.jpg" alt="Wake Word">
-        <h3>Wake Word Detector</h3>
-        <p>Real-time audio classification using CNNs on MFCC features, deployed with PyAudio.</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <img src="images/stateestimation.jpg" alt="EKF">
-        <h3>State Estimation (NIR-EKF)</h3>
-        <p>Implemented normalized innovation ratio EKF for robust state estimation.</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <img src="images/preterm.jpg" alt="Preterm Birth Prediction">
-        <h3>Preterm Birth Prediction</h3>
-        <p>Hybrid deep unfolded EKF & RL for preterm birth prediction using physiological data.</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <img src="images/retailsales.jpeg" alt="Retail Sales">
-        <h3>Retail Sales Forecasting</h3>
-        <p>GNNs for spatiotemporal forecasting in retail demand prediction.</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <img src="images/sentiment.jpg" alt="Sentiment Analysis">
-        <h3>Sentiment Analysis</h3>
-        <p>Twitter/Facebook sentiment classification with deep learning models.</p>
-      </div>
-
-      <div class="project-card fade-in">
-        <img src="images/voicecloning.jpg" alt="Voice Cloning">
-        <h3>Voice Cloning</h3>
-        <p>Neural speech synthesis and speaker adaptation for personalized voices.</p>
-      </div>
-
+      <button class="arrow right">&#10095;</button>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="fade-in skills">
+  <!-- Skills -->
+  <section>
     <h2>Skills</h2>
-    <ul>
-      <li>Machine Learning (PyTorch, TensorFlow, Keras)</li>
-      <li>Deep Learning (CNNs, RNNs, Transformers, GNNs)</li>
-      <li>Signal Processing & Wireless Communication</li>
-      <li>Optimization & Reinforcement Learning</li>
-      <li>Python, MATLAB, C++</li>
-    </ul>
+    <div class="skills-list">
+      <span>Python</span>
+      <span>PyTorch</span>
+      <span>TensorFlow</span>
+      <span>Keras</span>
+      <span>Scikit-learn</span>
+      <span>OpenCV</span>
+      <span>NumPy</span>
+      <span>Pandas</span>
+      <span>Signal Processing</span>
+      <span>Deep Unfolding</span>
+      <span>Variational Inference</span>
+      <span>Bayesian Regression</span>
+      <span>Graph Neural Networks (GNNs)</span>
+      <span>Reinforcement Learning</span>
+      <span>Time Series Forecasting</span>
+      <span>Cloud (AWS, GCP)</span>
+      <span>Git / GitHub</span>
+    </div>
   </section>
 
-  <!-- Certifications Section -->
-  <section class="fade-in certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AI for Medical Prognosis — DeepLearning.AI (2025)</li>
-      <li>AI for Medical Diagnosis — DeepLearning.AI (2025)</li>
-      <li>Generative AI for Everyone — DeepLearning.AI (2025)</li>
-      <li>Medical Image Processing — MathWorks (2025)</li>
-      <li>Introduction to Neural Networks & PyTorch — IBM (2023)</li>
-      <li>Image Denoising with Autoencoders & Keras — Guided Projects (2023)</li>
-      <li>Machine Learning — Stanford University (2020)</li>
-      <li>Python for Everybody — University of Michigan (2020)</li>
-    </ul>
+  <!-- Experience -->
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="experience">
+      <h3>AI Researcher — UET Lahore</h3>
+      <p><em>2022 – Present</em></p>
+      <ul>
+        <li>Developed deep unfolding pipelines for MRI reconstruction.</li>
+        <li>Implemented GNNs for spatiotemporal retail forecasting.</li>
+        <li>Applied RL in wireless networks optimization.</li>
+      </ul>
+
+      <h3>Machine Learning Engineer — Freelance</h3>
+      <p><em>2020 – 2022</em></p>
+      <ul>
+        <li>Delivered sentiment analysis, image restoration & fraud detection systems.</li>
+        <li>Deployed ML pipelines for signal & speech processing.</li>
+      </ul>
+    </div>
   </section>
 
-  <!-- Experience Section -->
-  <section class="fade-in experience">
-    <h2>Experience</h2>
-    <p>Worked on AI/ML, computer vision, and signal processing projects with strong focus on academic research and applied engineering solutions. Contributions include published papers, algorithm development, and advanced applications in imaging and communication systems.</p>
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <div class="education">
+      <h3>Ph.D. — Machine Learning & Signal Processing</h3>
+      <p>University of Engineering and Technology (UET), Lahore (Ongoing)</p>
+
+      <h3>M.Sc. — Electrical Engineering</h3>
+      <p>University of Engineering and Technology (UET), Lahore</p>
+    </div>
   </section>
 
-  <!-- JavaScript -->
+  <footer>
+    <p>© 2025 Talha Nadeem | Portfolio</p>
+  </footer>
+
   <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+    const projects = document.getElementById('projects');
 
-    document.querySelectorAll('.fade-in').forEach(el => {
-      observer.observe(el);
+    leftArrow.addEventListener('click', () => {
+      projects.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    rightArrow.addEventListener('click', () => {
+      projects.scrollBy({ left: 300, behavior: 'smooth' });
     });
   </script>
 </body>

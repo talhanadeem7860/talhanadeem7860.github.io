@@ -143,6 +143,8 @@ const repositories = [
     link: "https://github.com/talhanadeem7860/Multi-Degradation-Image-Restoration-Network-Based-on-Deep-Unfolding-Neural-Network",
     img: "images/imagerestoration.jpg"
   }
+
+  // Note: "talhanadeem7860.github.io" intentionally NOT included to hide it
 ];
 
 let currentIndex = 0;

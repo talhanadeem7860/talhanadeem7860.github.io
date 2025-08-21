@@ -1,60 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Talha Nadeem - Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Talha Nadeem — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Talha Nadeem, ML/DL Researcher and AI Engineer" />
 </head>
 <body>
+  <!-- ===== HEADER ===== -->
   <header>
     <h1>Talha Nadeem</h1>
-    <p>ML/DL Researcher | Signal Processing | AI Engineer</p>
+    <p>ML/DL Researcher · Signal Processing · AI Engineer</p>
     <div class="contact-links">
-      <a href="mailto:talhanadeem7860@gmail.com">Email</a>
-      <a href="https://github.com/talhanadeem7860" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/talha-nadeem-709022186/" target="_blank">LinkedIn</a>
-      <a href="Talha-Nadeem--CV.pdf" target="_blank">Resume</a>
+      <a href="Talha-Nadeem--CV.pdf" target="_blank" rel="noopener">📄 Resume</a>
+      <a href="mailto:talhanadeem7860@gmail.com">✉️ Email</a>
+      <a href="https://github.com/talhanadeem7860" target="_blank" rel="noopener">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/talha-nadeem-709022186/" target="_blank" rel="noopener">🔗 LinkedIn</a>
     </div>
   </header>
 
+  <!-- ===== SKILLS ===== -->
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Machine Learning, Deep Learning, AI Algorithms</li>
-      <li>Signal Processing, Time Series Forecasting</li>
-      <li>PyTorch, TensorFlow, Keras, OpenCV</li>
-      <li>Python, MATLAB, R, SQL</li>
-      <li>Cloud: AWS, GCP, Vertex AI</li>
-      <li>Docker, Git/GitHub, CI/CD, MLOps</li>
+      <li><strong>Core ML/DL:</strong> Supervised/Unsupervised Learning, Representation Learning, Transfer Learning, Generative Models</li>
+      <li><strong>Neural Nets:</strong> CNNs, RNN/LSTM/GRU, Transformers (ViT/BERT), GNNs, Autoencoders</li>
+      <li><strong>MLOps & Deployment:</strong> Docker, Git/GitHub, CI/CD, Experiment Tracking, Model Monitoring</li>
+      <li><strong>Frameworks:</strong> PyTorch, TensorFlow/Keras, scikit‑learn, OpenCV, RLlib</li>
+      <li><strong>Signal/Time‑Series:</strong> Kalman/Extended Kalman Filters, Spectral/DSP, SARIMA/LSTM forecasting</li>
+      <li><strong>Systems:</strong> CUDA Acceleration, GPU Pipelines, Optimization & Deep Unfolding</li>
+      <li><strong>Data & Cloud:</strong> Python, MATLAB, SQL · AWS/GCP (Vertex AI), REST APIs</li>
+      <li><strong>Domains:</strong> Biomedical AI (EEG/MRI), Computer Vision, NLP, Edge/Embedded AI</li>
     </ul>
   </section>
 
+  <!-- ===== PROJECTS (CAROUSEL) ===== -->
   <section id="projects">
     <h2>Repositories & Projects</h2>
     <div class="carousel-container">
-      <button class="prev">&#10094;</button>
+      <button class="prev" aria-label="Previous projects">&#10094;</button>
       <div class="carousel" id="repo-carousel"></div>
-      <button class="next">&#10095;</button>
+      <button class="next" aria-label="Next projects">&#10095;</button>
     </div>
   </section>
 
+  <!-- ===== EXPERIENCE ===== -->
   <section id="experience">
     <h2>Professional Experience</h2>
+
     <div class="exp-item">
-      <h3>Research Associate @ LUMS</h3>
-      <p>Worked on ML/DL projects including deep unfolding, time-series forecasting, and wireless communication system modeling.</p>
+      <h3>Machine Learning Researcher — LUMS <span style="font-weight:400;">(2019–Present)</span></h3>
+      <ul>
+        <li>Designed GPU‑optimized <strong>deep unfolding</strong> pipelines for image restoration, consistently improving PSNR on real data.</li>
+        <li>Developed robust <strong>state estimation</strong> with EKF and outlier‑aware updates, raising accuracy by ~20% in noisy regimes.</li>
+        <li>Built reinforcement‑learning‑guided forecasting for <strong>preterm birth risk</strong> that reduced false alarms by ~12% in testing.</li>
+        <li>Accelerated <strong>MRI reconstruction</strong> workloads with CUDA and batched pipelines for large datasets.</li>
+        <li>Led ML labs and mentored graduate projects spanning time‑series, biomedical AI, and control systems.</li>
+      </ul>
     </div>
+
     <div class="exp-item">
-      <h3>Graduate Researcher @ UET Lahore</h3>
-      <p>Developed algorithms for state estimation, preterm birth prediction, and RIS-enabled networks.</p>
+      <h3>Research Assistant — NUST <span style="font-weight:400;">(2018–2019)</span></h3>
+      <ul>
+        <li>Built a real‑time EEG platform to visualize <strong>source‑localized brain activity</strong> (OpenVibe + LORETA/Dipole fitting).</li>
+        <li>Implemented artifact‑removal and streaming pipelines that improved reliability of localization during live demos.</li>
+      </ul>
+    </div>
+
+    <div class="exp-item">
+      <h3>Intern — SUPARCO <span style="font-weight:400;">(2018)</span></h3>
+      <ul>
+        <li>Contributed to simulations in the <strong>Power & Control Systems Lab</strong>, focusing on control and power subsystems.</li>
+      </ul>
     </div>
   </section>
 
+  <!-- ===== EDUCATION ===== -->
   <section id="education">
     <h2>Education</h2>
-    <p><strong>MS Electrical Engineering</strong> — UET Lahore (2025)</p>
-    <p><strong>BSc Electrical Engineering</strong> — UET Lahore (2021)</p>
+
+    <div class="edu-item">
+      <h3>PhD, Electrical Engineering — LUMS <span style="font-weight:400;">(2021–Present)</span></h3>
+      <p><em>Research focus:</em> blending optimization and learning — adapting model‑based methods into modern ML algorithms.</p>
+      <p><em>Selected coursework:</em> Robot Motion Planning, Probability, Remote Sensing, Information Theory, Smart Grid Systems.</p>
+    </div>
+
+    <div class="edu-item">
+      <h3>MSc, Electrical Engineering — LUMS <span style="font-weight:400;">(2019–2021)</span></h3>
+      <p><em>Thesis:</em> <strong>Generalized Norm Estimator for Robust State Estimation</strong>.</p>
+      <p><em>Selected coursework:</em> Advanced ML, Stochastic Systems, Convex Optimization, Digital Signal Processing.</p>
+    </div>
+
+    <div class="edu-item">
+      <h3>BSc, Electrical Engineering — NUST <span style="font-weight:400;">(2015–2019)</span></h3>
+      <p><em>Capstone:</em> <strong>Real‑Time 3D Brain Visualization</strong> with source‑localized EEG activity.</p>
+      <p><em>Selected coursework:</em> Communications, DSP, Electromagnetics, Microwave Engineering, Image Processing.</p>
+    </div>
   </section>
 
   <script src="script.js"></script>
